@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Adi!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="balloons">
+      <div class="balloon red"></div>
+      <div class="balloon blue"></div>
+      <div class="balloon yellow"></div>
+      <div class="balloon green"></div>
+    </div>
+
+    <h1>🎉 Happy Birthday, <span id="name">My Friend</span>! 🎂</h1>
+    <p class="message">
+      Wishing you a day filled with love, laughter, and all your favorite things.  
+      You deserve the best today and always! 💖
+    </p>
+
+    <button class="btn" onclick="changeName()">Click me 🎁</button>
+  </div>
+
+  <script>
+    function changeName() {
+      const name = prompt("Enter your name 😊:");
+      if (name) {
+        document.getElementById("name").textContent = name;
+      }
+    }
+  </script>
+</body>
+</html>
